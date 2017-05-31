@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  ahorro_esperado: 1
+  ahorro_actual: 1
+  user: one
+  cuota: 1
+  cuota_actual: 1
+
+two:
+  nombre: MyString
+  ahorro_esperado: 1
+  ahorro_actual: 1
+  user: two
+  cuota: 1
+  cuota_actual: 1

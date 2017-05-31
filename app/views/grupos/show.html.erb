@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @grupo.nombre %>
+</p>
+
+<p>
+  <strong>Ahorro esperado:</strong>
+  <%= @grupo.ahorro_esperado %>
+</p>
+
+<p>
+  <strong>Ahorro actual:</strong>
+  <%= @grupo.ahorro_actual %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @grupo.user %>
+</p>
+
+<p>
+  <strong>Cuota:</strong>
+  <%= @grupo.cuota %>
+</p>
+
+<p>
+  <strong>Cuota actual:</strong>
+  <%= @grupo.cuota_actual %>
+</p>
+
+<%= link_to 'Edit', edit_grupo_path(@grupo) %> |
+<%= link_to 'Back', grupos_path %>

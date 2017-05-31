@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Grupo Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Grupo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @grupo_users.each do |grupo_user| %>
+      <tr>
+        <td><%= grupo_user.user_id %></td>
+        <td><%= grupo_user.grupo_id %></td>
+        <td><%= link_to 'Show', grupo_user %></td>
+        <td><%= link_to 'Edit', edit_grupo_user_path(grupo_user) %></td>
+        <td><%= link_to 'Destroy', grupo_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Grupo User', new_grupo_user_path %>

@@ -1,0 +1,9 @@
+<p>
+  <h1>Usuarios</h1>
+</p>
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.nombre %></td>
+    <td><%= user.correo %></td>
+  </tr>
+<% end %>

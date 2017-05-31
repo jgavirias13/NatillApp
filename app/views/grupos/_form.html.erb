@@ -1,0 +1,47 @@
+<%= form_with(model: grupo, local: true) do |form| %>
+  <% if grupo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(grupo.errors.count, "error") %> prohibited this grupo from being saved:</h2>
+
+      <ul>
+      <% grupo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre, id: :grupo_nombre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ahorro_esperado %>
+    <%= form.number_field :ahorro_esperado, id: :grupo_ahorro_esperado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ahorro_actual %>
+    <%= form.number_field :ahorro_actual, id: :grupo_ahorro_actual %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :grupo_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cuota %>
+    <%= form.number_field :cuota, id: :grupo_cuota %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cuota_actual %>
+    <%= form.number_field :cuota_actual, id: :grupo_cuota_actual %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
